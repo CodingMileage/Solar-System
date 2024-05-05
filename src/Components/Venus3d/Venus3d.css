@@ -1,28 +1,19 @@
-body {
-  background: url(../../assets/Space.jpg) center no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.planet {
+.venus {
   margin: 100px;
-  width: 20em;
-  height: 20em;
+  width: 22em;
+  height: 22em;
   background: url(../../assets/venusFlat.jpg);
-  box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #f0d08b;
+  box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #c2b209;
   position: relative;
-  animation: rotate 10s linear infinite;
-  transition: transform 1s ease-in-out;
+  animation: rotate 25s linear infinite;
+  transition: transform 2s ease-in-out;
 }
 
-.planet:hover {
-  transform: scale(1.2); /* Scale up to 1.2 times the original size on hover */
+.venus:hover {
+  transform: scale(1.1); /* Scale up to 1.2 times the original size on hover */
 }
 
-.moon {
+.vMoon {
   background: url(../../assets/Moon.jpg);
   box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
   width: 6em;
@@ -35,8 +26,8 @@ body {
   z-index: 1;
 }
 
-.planet,
-.moon {
+.venus,
+.vMoon {
   border-radius: 50%;
   background-repeat: repeat;
   background-size: 200% 100%;

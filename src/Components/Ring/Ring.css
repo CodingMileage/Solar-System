@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background: url(../../assets/Space.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+}
+.earth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: url(../../assets/SaturnFlat.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px #000, -0.5em -0.5em 1em #a09809;
+  animation: rotate 70s linear infinite;
+  transition: transform 1s ease-in-out;
+  animation: animateEarth 40s linear infinite;
+}
+@keyframes animateEarth {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -750px 0;
+  }
+}
+.circle {
+  transform-style: preserve-3d;
+  animation: animateText 10s linear infinite;
+}
+
+.circle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: #a09809; */
+  color: rgb(255, 234, 0);
+  font-size: 3em;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  padding: 5px 11px;
+  transform: rotateY(calc(var(--i) * calc(360deg / 34))) translateZ(200px);
+}
+
+@keyframes animateText {
+  0% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg)
+      translateY(-30px);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(15deg)
+      translateY(-30px);
+  }
+}

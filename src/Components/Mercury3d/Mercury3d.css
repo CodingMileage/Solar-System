@@ -1,3 +1,10 @@
+body {
+  background: url(../../assets/Space.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .mercury {
   margin: 100px;
   width: 15em;
@@ -13,7 +20,7 @@
   transform: scale(1.2); /* Scale up to 1.2 times the original size on hover */
 }
 
-.moon {
+.mercMoon {
   background: url(../../assets/Moon.jpg);
   box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
   width: 6em;
@@ -27,7 +34,7 @@
 }
 
 .mercury,
-.moon {
+.mercMoon {
   border-radius: 50%;
   background-repeat: repeat;
   background-size: 200% 100%;

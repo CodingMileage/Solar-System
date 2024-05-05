@@ -13,7 +13,7 @@
   transform: scale(1.1); /* Scale up to 1.2 times the original size on hover */
 }
 
-.Emoon {
+.eMoon {
   background: url(../../assets/Moon.jpg);
   box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
   width: 6em;
@@ -22,12 +22,12 @@
   left: -11em;
   top: 50%;
   transform: translateY(-50%);
-  animation: rotate 5s linear infinite, orbit 20s infinite ease-in-out;
+  animation: rotate 15s linear infinite, orbit 30s infinite ease-in-out;
   z-index: 1;
 }
 
 .earth,
-.Emoon {
+.eMoon {
   border-radius: 50%;
   background-repeat: repeat;
   background-size: 200% 100%;
