@@ -8,6 +8,10 @@ const Orbit = () => {
         <div className="inner-orbit-circles"></div>
       </div>
 
+      <div className="venusOrbit">
+        <div className="vInner"></div>
+      </div>
+
       <div id="middle-orbit">
         <div className="middle-orbit-circles"></div>
       </div>

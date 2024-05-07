@@ -1,7 +1,7 @@
 .venus {
-  margin: 100px;
-  width: 22em;
-  height: 22em;
+  margin: 500px;
+  width: 15em;
+  height: 15em;
   background: url(../../assets/venusFlat.jpg);
   box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #c2b209;
   position: relative;
@@ -10,19 +10,19 @@
 }
 
 .venus:hover {
-  transform: scale(1.1); /* Scale up to 1.2 times the original size on hover */
+  /* transform: scale(1.1); */
 }
 
 .vMoon {
   background: url(../../assets/Moon.jpg);
-  box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
-  width: 6em;
-  height: 6em;
+  box-shadow: inset -0.5em -0.5em 0.5em #000, -0.2em -0.2em 0.5em #ccc;
+  width: 3em;
+  height: 3em;
   position: absolute;
   left: -11em;
   top: 50%;
   transform: translateY(-50%);
-  animation: rotate 5s linear infinite, orbit 20s infinite ease-in-out;
+  animation: rotate 10s linear infinite, orbit 20s infinite ease-in-out;
   z-index: 1;
 }
 

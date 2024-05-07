@@ -15,27 +15,49 @@ import Saturn3d from "./Components/Saturn3d/Saturn3d";
 import Uranas3d from "./Components/Uranas3d/Uranas3d";
 import Neptune3d from "./Components/Nuptune3d/Neptune3d";
 import Ring from "./Components/Ring/Ring";
+import ScrollBar from "./Components/ScrollBar/ScrollBar";
 
 function App() {
   return (
-    <div className="plane">
-      <NavBar />
-      {/* <Mercury /> */}
-      {/* <Venus /> */}
-      {/* <Earth /> */}
-      {/* <Mars /> */}
-      {/* <Jupiter /> */}
-      {/* <Orbit /> */}
-      <Mercury3d />
-      {/* <Orbit3d /> */}
-      <Venus3d />
-      <Earth3d />
-      <Mars3d />
-      <Jupiter3d />
-      <Saturn3d />
-      <Uranas3d />
-      <Neptune3d />
-      {/* <Ring /> */}
+    <div className="back">
+      <div className="plane">
+        <ScrollBar />
+        <NavBar />
+        {/* <Orbit /> */}
+        <div className="mercDiv">
+          <Mercury3d />
+        </div>
+
+        <div className="venusDiv">
+          <Venus3d />
+        </div>
+
+        <div className="earthDiv">
+          <Earth3d />
+        </div>
+
+        <div className="marsDiv">
+          <Mars3d />
+        </div>
+
+        <div className="jDiv">
+          <Jupiter3d />
+        </div>
+
+        <div className="satDiv">
+          <Saturn3d />
+        </div>
+
+        <div className="uDiv">
+          <Uranas3d />
+        </div>
+
+        <div className="nDiv">
+          <Neptune3d />
+        </div>
+
+        {/* <Ring /> */}
+      </div>
     </div>
   );
 }

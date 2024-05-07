@@ -1,16 +1,16 @@
 .saturn {
-  margin: 250px;
-  width: 35em;
-  height: 35em;
+  margin: 500px;
+  width: 21em;
+  height: 21em;
   background: url(../../assets/SaturnFlat.jpg);
-  box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #a09809;
+  box-shadow: inset -2em -2em 2em #000000, -0.5em -0.5em 1.5em #a09809;
   position: relative;
   animation: rotate 70s linear infinite;
   transition: transform 2s ease-in-out;
 }
 
 .saturn:hover {
-  transform: scale(1.2); /* Scale up to 1.2 times the original size on hover */
+  /* transform: scale(1.1); */
 }
 
 .sMoon {

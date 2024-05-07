@@ -1,7 +1,7 @@
 .earth {
-  margin: 100px;
-  width: 22em;
-  height: 22em;
+  margin: 1000px;
+  width: 16em;
+  height: 16em;
   background: url(../../assets/EarthFlat.jpg);
   box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #4851a7;
   position: relative;
@@ -10,7 +10,7 @@
 }
 
 .earth:hover {
-  transform: scale(1.1); /* Scale up to 1.2 times the original size on hover */
+  /* transform: scale(1.1); */
 }
 
 .eMoon {

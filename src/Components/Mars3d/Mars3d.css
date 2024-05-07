@@ -1,16 +1,16 @@
 .mars {
   margin: 100px;
-  width: 20em;
-  height: 20em;
+  width: 13em;
+  height: 13em;
   background: url(../../assets/MarsFlat.jpg);
   box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #a1810b;
   position: relative;
-  animation: rotate 25s linear infinite;
+  animation: rotate 80s linear infinite;
   transition: transform 2s ease-in-out;
 }
 
 .mars:hover {
-  transform: scale(1.2); /* Scale up to 1.2 times the original size on hover */
+  /* transform: scale(1.2);  */
 }
 
 .marsMoon {
@@ -22,7 +22,7 @@
   left: -11em;
   top: 50%;
   transform: translateY(-50%);
-  animation: rotate 17s linear infinite, orbit 20s infinite ease-in-out;
+  animation: rotate 17s linear infinite, orbit 30s infinite ease-in-out;
   z-index: 1;
 }
 

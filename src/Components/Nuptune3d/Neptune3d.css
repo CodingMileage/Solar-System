@@ -1,7 +1,7 @@
 .neptune {
   margin: 250px;
-  width: 40em;
-  height: 40em;
+  width: 17em;
+  height: 17em;
   background: url(../../assets/NeptuneFlat.jpg);
   box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #189eca;
   position: relative;
@@ -10,7 +10,7 @@
 }
 
 .neptune:hover {
-  transform: scale(1.2); /* Scale up to 1.2 times the original size on hover */
+  /* transform: scale(1.2); */
 }
 
 .nMoon {

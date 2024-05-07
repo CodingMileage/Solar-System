@@ -1,16 +1,16 @@
 .jupiter {
-  margin: 20px;
-  width: 40em;
-  height: 40em;
+  margin: 500px;
+  width: 21em;
+  height: 21em;
   background: url(../../assets/JupiterFlat.jpg);
   box-shadow: inset -2em -2em 2em #000, -0.5em -0.5em 1em #a1810b;
   position: relative;
-  animation: rotate 70s linear infinite;
+  animation: rotate 90s linear infinite;
   transition: transform 2s ease-in-out;
 }
 
 .jupiter:hover {
-  transform: scale(1.2); /* Scale up to 1.2 times the original size on hover */
+  /* transform: scale(1.2); */
 }
 
 .jMoon {
