@@ -34,6 +34,7 @@ const Earth3d = () => {
         <div className="earth">
           <div className="eMoon"></div>
         </div>
+        <p>Home!</p>
       </div>
     </>
   );

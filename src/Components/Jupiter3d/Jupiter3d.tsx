@@ -34,7 +34,7 @@ const Jupiter3d = () => {
           <div className="jMoon"></div>
         </div>
         <p>
-          While Jupiter has eleven times the diameter of earth, it's gravity is
+          While Jupiter is eleven times the diameter of earth, it's gravity is
           only 2.4 times that of earths gravity!
         </p>
         <p>Jupiter has {moons} moons!</p>

@@ -32,6 +32,7 @@ const Mars3d = () => {
         <h1>{data.englishName}</h1>
         <div className="mars">
           <div className="marsMoon"></div>
+          <div className="marsMoon2"></div>
         </div>
         <p>Mars has {moons} moons!</p>
       </div>

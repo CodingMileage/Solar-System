@@ -13,7 +13,8 @@
   /* transform: scale(1.2);  */
 }
 
-.marsMoon {
+.marsMoon,
+.marsMoon2 {
   background: url(../../assets/Moon.jpg);
   box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
   width: 6em;
@@ -27,10 +28,15 @@
 }
 
 .mars,
-.marsMoon {
+.marsMoon,
+.marsMoon2 {
   border-radius: 50%;
   background-repeat: repeat;
   background-size: 200% 100%;
+}
+
+.marsMoon2 {
+  animation: rotate 17s linear infinite, orbit 50s infinite ease-in-out;
 }
 
 .mCards {
