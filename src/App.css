@@ -13,6 +13,10 @@
   flex-direction: column;
 }
 
+.plane > * {
+  margin: 200px;
+}
+
 .mercDiv {
   animation: fade-in linear;
   animation-timeline: view();
@@ -53,25 +57,16 @@
   animation-timeline: view();
 }
 
-/* @keyframes back {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
 @keyframes fade-in {
   0% {
-    scale: 0.1;
-    opacity: 1;
+    scale: 0;
+    opacity: 0.6;
   }
-  50% {
-    scale: 2;
+  60% {
+    scale: 1.5;
     opacity: 1;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
 }

@@ -1,5 +1,5 @@
 .mars {
-  margin: 100px;
+  /* margin: 200px; */
   width: 13em;
   height: 13em;
   background: url(../../assets/MarsFlat.jpg);
@@ -31,6 +31,14 @@
   border-radius: 50%;
   background-repeat: repeat;
   background-size: 200% 100%;
+}
+
+.mCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  border: solid;
 }
 
 @keyframes rotate {

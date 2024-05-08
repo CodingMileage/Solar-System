@@ -12,7 +12,7 @@ import Venus3d from "./Components/Venus3d/Venus3d";
 import Mars3d from "./Components/Mars3d/Mars3d";
 import Jupiter3d from "./Components/Jupiter3d/Jupiter3d";
 import Saturn3d from "./Components/Saturn3d/Saturn3d";
-import Uranas3d from "./Components/Uranas3d/Uranas3d";
+import Uranus3d from "./Components/Uranus3d/Uranus3d";
 import Neptune3d from "./Components/Nuptune3d/Neptune3d";
 import Ring from "./Components/Ring/Ring";
 import ScrollBar from "./Components/ScrollBar/ScrollBar";
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="back">
       <div className="plane">
-        <ScrollBar />
+        {/* <ScrollBar /> */}
         <NavBar />
         {/* <Orbit /> */}
         <div className="mercDiv">
@@ -49,7 +49,7 @@ function App() {
         </div>
 
         <div className="uDiv">
-          <Uranas3d />
+          <Uranus3d />
         </div>
 
         <div className="nDiv">

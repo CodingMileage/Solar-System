@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./Earth3d.css";
+import "./Uranus3d.css";
 
-const apiUrl =
-  "https://api.le-systeme-solaire.net/rest/bodies/?filter=id,eq,earth";
+const apiUrl = "https://api.le-systeme-solaire.net/rest/bodies/uranus";
 
-const Earth3d = () => {
+const Uranus3d = () => {
   const [data, setData] = useState({});
   const [moons, setMoons] = useState(0);
 
@@ -26,17 +25,17 @@ const Earth3d = () => {
 
     fetchData();
   }, []);
-
   return (
     <>
-      <div className="eCard">
-        <h1>Earth</h1>
-        <div className="earth">
-          <div className="eMoon"></div>
+      <div className="uCard">
+        <h1>{data.englishName}</h1>
+        <div className="uranus">
+          <div className="uMoon"></div>
         </div>
+        <p>Uranus has {moons} moons!</p>
       </div>
     </>
   );
 };
 
-export default Earth3d;
+export default Uranus3d;
