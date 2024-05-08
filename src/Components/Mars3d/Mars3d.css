@@ -17,12 +17,12 @@
 .marsMoon2 {
   background: url(../../assets/Moon.jpg);
   box-shadow: inset -1.5em -1.5em 1.5em #000, -0.2em -0.2em 0.5em #ccc;
-  width: 6em;
-  height: 6em;
+  width: 4em;
+  height: 4em;
   position: absolute;
   left: -11em;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   animation: rotate 17s linear infinite, orbit 30s infinite ease-in-out;
   z-index: 1;
 }
@@ -37,6 +37,11 @@
 
 .marsMoon2 {
   animation: rotate 17s linear infinite, orbit 50s infinite ease-in-out;
+  animation-direction: reverse;
+  width: 3em;
+  height: 3em;
+  transform: translateY(-24%);
+  box-shadow: inset -1.0em -1.0em 1.0em #000, -0.2em -0.2em 0.5em #ccc;
 }
 
 .mCards {

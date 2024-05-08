@@ -6,6 +6,7 @@ const apiUrl = "https://api.le-systeme-solaire.net/rest/bodies/jupiter";
 const Jupiter3d = () => {
   const [data, setData] = useState({});
   const [moons, setMoons] = useState(0);
+  const [days, setDays] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,6 +18,7 @@ const Jupiter3d = () => {
 
         const result = await response.json();
         setData(result);
+        setDays(result.sideralOrbit);
         setMoons(result.moons.length);
       } catch (error) {
         console.error(error);
@@ -37,7 +39,8 @@ const Jupiter3d = () => {
           While Jupiter is eleven times the diameter of earth, it's gravity is
           only 2.4 times that of earths gravity!
         </p>
-        <p>Jupiter has {moons} moons!</p>
+        <p>Jupiter has {moons} moons and you might have thought that Jupiter wins the most moons contest, but it doesn't!</p>
+        <p>It takes about {Math.round(days)} earth days to orbit the sun!</p>
       </div>
     </>
   );

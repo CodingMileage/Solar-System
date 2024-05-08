@@ -41,6 +41,11 @@
   /* border: solid; */
 }
 
+.board {
+  display: flex;
+  border: solid;
+}
+
 @keyframes rotate {
   to {
     background-position: -200% 0;
