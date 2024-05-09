@@ -10,7 +10,7 @@
 }
 
 .venus:hover {
-  /* transform: scale(1.1); */
+  /* transform: scale(1.05); */
 }
 
 .vMoon {
@@ -37,13 +37,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   /* border: solid; */
 }
 
 .board {
   display: flex;
-  border: solid;
+  /* border: solid; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid; */
 }
 
 @keyframes rotate {

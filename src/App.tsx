@@ -24,6 +24,7 @@ function App() {
         {/* <ScrollBar /> */}
         <NavBar />
         {/* <Orbit /> */}
+
         <div className="mercDiv">
           <Mercury3d />
         </div>
