@@ -29,6 +29,19 @@ const Earth3d = () => {
 
   return (
     <>
+      <div className="container">
+        <h2>Comparison Amongst The Cosmos</h2>
+        <ul>
+          <li className="earthTemp">Temperature: {15} C</li>
+          <li className="earthMass">
+            Mass: {5.97} X 10^{24}
+          </li>
+          <li className="earthEV">Escape Velocity: {11176} m/s</li>
+          <li className="earthMoon">Moons: {1}</li>
+          <li className="earthDays">Sideral Days: {365}</li>
+        </ul>
+      </div>
+
       <div className="eCard">
         <h1>Earth</h1>
         <div className="earth">

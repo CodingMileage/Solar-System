@@ -121,7 +121,7 @@ li.vol:after {
 
 @keyframes vol {
   to {
-    width: 90%;
+    width: 30%;
   }
 }
 
@@ -131,7 +131,7 @@ li.eV:after {
 
 @keyframes eV {
   to {
-    width: 20%;
+    width: 10%;
   }
 }
 

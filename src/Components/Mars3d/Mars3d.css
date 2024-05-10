@@ -114,11 +114,11 @@ li.marsTemp:after {
   }
 
   to {
-    width: 60%;
+    width: 40%;
   }
 
   100% {
-    background-color: rgb(255, 51, 0);
+    /* background-color: rgb(255, 51, 0); */
   }
 }
 
@@ -128,7 +128,7 @@ li.marsMass:after {
 
 @keyframes marsMass {
   to {
-    width: 40%;
+    width: 15%;
   }
 }
 

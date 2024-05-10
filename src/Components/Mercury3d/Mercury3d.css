@@ -112,7 +112,7 @@ li.mercMass:after {
 
 @keyframes mercMass {
   to {
-    width: 10%;
+    width: 5%;
   }
 }
 
@@ -122,15 +122,15 @@ li.mercEV:after {
 
 @keyframes mercEV {
   to {
-    width: 10%;
+    width: 5%;
   }
 }
 
 li.mercDays:after {
-  animation-name: days;
+  animation-name: mercDays;
 }
 
-@keyframes days {
+@keyframes mercDays {
   to {
     width: 10%;
   }

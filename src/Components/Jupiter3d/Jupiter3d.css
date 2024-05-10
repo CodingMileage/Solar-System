@@ -95,7 +95,7 @@ li.jTemp:after {
   }
 
   to {
-    width: 40%;
+    width: 25%;
   }
 
   100% {
@@ -118,7 +118,7 @@ li.jupMoon:after {
 
 @keyframes jupMoon {
   to {
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -128,7 +128,7 @@ li.jEV:after {
 
 @keyframes jEV {
   to {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -138,7 +138,7 @@ li.jDays:after {
 
 @keyframes jDays {
   to {
-    width: 50%;
+    width: 75%;
   }
 }
 
