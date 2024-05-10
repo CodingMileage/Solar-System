@@ -17,6 +17,7 @@
 
 .plane > * {
   margin: 500px;
+  /* margin-left: 450px; */
   font-family: "Roboto";
   /* background: linear-gradient(185deg, #dd9f6500 0.36%, #b823e113);` */
 }
@@ -41,13 +42,17 @@
   /* border: solid; */
 }
 
+.container {
+  animation-timeline: view();
+}
+
 @keyframes fade-in {
   0% {
     scale: 0;
     opacity: 0.6;
   }
-  60% {
-    scale: 1.5;
+  40% {
+    scale: 1.2;
     opacity: 1;
   }
   100% {

@@ -12,6 +12,7 @@ const Venus3d = () => {
   const [vol, setVol] = useState(0);
   const [volE, setVolE] = useState(0);
   const [escape, setEscape] = useState(0);
+  const [temp, setTemp] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,9 +35,10 @@ const Venus3d = () => {
 
         setEscape(result.escape);
 
+        setTemp(result.avgTemp);
+
         setMoons(result.moons.length);
         setDays(result.sideralOrbit);
-        console.log(result.sideralOrbit);
       } catch (error) {
         console.error(error);
       }
@@ -47,17 +49,25 @@ const Venus3d = () => {
 
   return (
     <>
-      <div className="card">
-        <p>
-          Volume: {vol}X 10^{volE} KG
-        </p>
-        <p>
-          Escape Velocity: {escape} m/s or {escape * 2.237} mph
-        </p>
+      <div className="container">
+        <h2>Comparison Amongst The Cosmos</h2>
+        <ul>
+          <li className="temp">Temperature: {temp - 273} C</li>
+          <li className="vol">
+            Mass: {mass} X 10^{massE}
+          </li>
+          <li className="eV">Escape Velocity: {escape} m/s</li>
+          <li className="numMoon">Moons: {moons}</li>
+          <li className="days">Sideral Days: {Math.round(days)}</li>
+        </ul>
       </div>
+
       <div className="vCard">
         <h1>{data.englishName}</h1>
         <div className="venus">{/* <div className="vMoon"></div> */}</div>
+      </div>
+
+      {/* <div className="rCard">
         <p>The hotest planet in the solar system!</p>
         <p>Venus has {moons} moons!</p>
         <p>
@@ -66,7 +76,7 @@ const Venus3d = () => {
         <p>
           It's mass is {mass} X 10^{massE} KG
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

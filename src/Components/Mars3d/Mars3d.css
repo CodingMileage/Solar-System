@@ -36,20 +36,130 @@
 }
 
 .marsMoon2 {
-  animation: rotate 17s linear infinite, orbit 50s infinite ease-in-out;
+  animation: rotate 17s linear infinite, orbit2 50s infinite ease-in-out;
   animation-direction: reverse;
   width: 3em;
   height: 3em;
+  left: -5em;
   transform: translateY(-24%);
-  box-shadow: inset -1.0em -1.0em 1.0em #000, -0.2em -0.2em 0.5em #ccc;
+  box-shadow: inset -1em -1em 1em #000, -0.2em -0.2em 0.5em #ccc;
 }
 
-.mCards {
+.mCard,
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 200px;
-  border: solid;
+  margin-top: 0;
+  /* align-items: center; */
+  /* margin-top: 200px; */
+  /* border: solid; */
+}
+
+.mCard {
+  margin: 200px;
+}
+
+.container {
+  width: 400px;
+  animation-timeline: view();
+
+  /* margin: 50px auto 0; */
+  /* padding: 20px; */
+}
+
+h2 {
+  align-self: center;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  margin: 40px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(54, 126, 223, 0.5);
+  border-radius: 1000px;
+}
+li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: rgba(54, 126, 223, 1);
+  border-radius: 1000px;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+li.marsTemp:after {
+  animation-name: marsTemp;
+}
+
+@keyframes marsTemp {
+  from {
+    width: 0%;
+    background-color: rgb(17, 0, 255);
+  }
+
+  to {
+    width: 60%;
+  }
+
+  100% {
+    background-color: rgb(255, 51, 0);
+  }
+}
+
+li.marsMass:after {
+  animation-name: marsMass;
+}
+
+@keyframes marsMass {
+  to {
+    width: 40%;
+  }
+}
+
+li.marsMoons:after {
+  animation-name: marsMoons;
+}
+
+@keyframes marsMoons {
+  to {
+    width: 20%;
+  }
+}
+
+li.marsEV:after {
+  animation-name: marsEV;
+}
+
+@keyframes marsEV {
+  to {
+    width: 20%;
+  }
+}
+
+li.marsDays:after {
+  animation-name: marsDays;
+}
+
+@keyframes marsDays {
+  to {
+    width: 40%;
+  }
 }
 
 @keyframes rotate {
@@ -71,6 +181,23 @@
   }
   100% {
     left: -11em;
+    z-index: 1;
+  }
+}
+
+@keyframes orbit2 {
+  49% {
+    z-index: 1;
+  }
+  50% {
+    left: 15em;
+    z-index: -1;
+  }
+  99% {
+    z-index: -1;
+  }
+  100% {
+    left: -5em;
     z-index: 1;
   }
 }
