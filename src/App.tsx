@@ -16,6 +16,7 @@ import Uranus3d from "./Components/Uranus3d/Uranus3d";
 import Neptune3d from "./Components/Nuptune3d/Neptune3d";
 import Ring from "./Components/Ring/Ring";
 import ScrollBar from "./Components/ScrollBar/ScrollBar";
+import Sun from "./Components/Sun/Sun";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <div className="plane">
         {/* <ScrollBar /> */}
         <NavBar />
+        <Sun />
         {/* <Orbit /> */}
 
         <div className="mercDiv">

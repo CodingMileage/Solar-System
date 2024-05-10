@@ -43,7 +43,7 @@
 }
 
 .container {
-  animation-timeline: view();
+  /* animation-timeline: view(); */
 }
 
 @keyframes fade-in {
