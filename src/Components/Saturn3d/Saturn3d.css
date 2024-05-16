@@ -53,6 +53,10 @@ h2 {
   align-self: center;
 }
 
+ul {
+  /* align-self: center; */
+}
+
 li {
   position: relative;
   list-style: none;

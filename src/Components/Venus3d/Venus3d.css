@@ -47,16 +47,18 @@
   /* border: solid; */
 }
 
-.rCard,
-.container {
+.vCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin: 200px;
   /* border: solid; */
 }
 
 .container {
   width: 400px;
+  animation-timeline: view();
+
   /* margin: 50px auto 0; */
   /* padding: 20px; */
 }

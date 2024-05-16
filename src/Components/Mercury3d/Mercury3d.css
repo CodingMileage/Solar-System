@@ -54,6 +54,7 @@ p {
 
 h2 {
   align-self: center;
+  /* border: solid; */
 }
 
 li {
