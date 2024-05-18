@@ -1,10 +1,5 @@
 import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
-import Mercury from "./Components/Mercury/Mercury";
-import Venus from "./Components/Venus/Venus";
-import Earth from "./Components/Earth/Earth";
-import Mars from "./Components/Mars/Mars";
-import Orbit from "./Components/Orbit/Orbit";
 import Orbit3d from "./Components/Orbit/Orbit3d";
 import Earth3d from "./Components/Earth3d/Earth3d";
 import Mercury3d from "./Components/Mercury3d/Mercury3d";
